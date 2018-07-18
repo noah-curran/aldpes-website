@@ -1,0 +1,15 @@
+div {
+    text-align: center;
+}
+
+::ng-deep .ui-widget {
+    background: #C28E0E !important;
+}
+
+::ng-deep .ui-widget-content {
+    border-color: black !important;
+}
+
+.background-color {
+    background-color: #C28E0E;
+}

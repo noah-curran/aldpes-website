@@ -1,0 +1,71 @@
+// 3d buttons with gradient and give the boarders a transition
+
+::ng-deep .ui-menubar .ui-menubar-root-list > .ui-menuitem  {
+    padding-right: 1em;
+}
+
+::ng-deep .ui-menubar .ui-menubar-custom {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+::ng-deep .ui-menubar {
+    /* background: linear-gradient(to bottom, #f6f7f9 0%, #C28E0E 100%); */
+    background: #C28E0E;
+    border-color: #000000;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    border-radius: 0px;
+}
+
+/* ::ng-deep .ui-menuitem-link {
+    border: 1px solid #000000 !important;
+    font-weight: bolder !important;
+} */
+
+::ng-deep .ui-menuitem .ui-menuitem-text {
+    color: #000000
+}
+
+::ng-deep .ui-widget-content a {
+    color: #000000 !important
+}
+
+::ng-deep .ui-menubar .ui-menuitem .ui-menuitem-link {
+    font-weight: bolder !important; 
+}
+
+::ng-deep .ui-submenu .ui-menuitem .ui-menuitem-link {
+    border: 1px solid #C28E0E !important;
+    font-weight: bolder !important; 
+}
+
+::ng-deep .ui-menuitem-link {
+    -moz-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    -webkit-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out;
+    background:  #C28E0E
+}
+
+::ng-deep .ui-menuitem.ui-menuitem-active > .ui-menuitem-link {
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    background-color: #BAA892 !important;
+    border-color: transparent; 
+}
+
+::ng-deep .ui-menuitem.ui-menuitem-active > .ui-menuitem-text {
+    color: white !important
+}
+
+::ng-deep .ui-submenu-list {
+    background: #000000 !important;
+    border-color: #000000;
+}
