@@ -2,6 +2,10 @@ div {
     text-align: center;
 }
 
+.left-right-padding {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
 
 ::ng-deep .ui-widget-content {
     border-color: black !important;
