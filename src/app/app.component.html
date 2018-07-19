@@ -10,10 +10,15 @@
   <div class="ui-g-12">
 
     <div class="ui-g-9" style="height: 100%;">
-      <p-galleria panelWidth="100%" panelHeight="500" [images]="images" [showCaption]="true" ngClass="z-index-mid"></p-galleria>
+      <p-galleria panelWidth="100%" 
+      panelHeight="515" 
+      [images]="images"
+      [showFilmstrip]="true"
+      [showCaption]="true"
+      effectDuration=100></p-galleria>
     </div>
-    <div class="ui-g-3">
-      <a class="twitter-timeline" href="https://twitter.com/LifeAtPurdue?ref_src=twsrc%5Etfw" data-height="550" data-chrome="nofooter noborders">Tweets by Life@Purdue</a> 
+    <div class="ui-g-3" style="height: 100%;">
+      <a class="twitter-timeline" href="https://twitter.com/LifeAtPurdue?ref_src=twsrc%5Etfw" data-height="100%" data-chrome="nofooter noborders">Tweets by Life@Purdue</a> 
     </div>
   </div>
   <div class="ui-g-12">

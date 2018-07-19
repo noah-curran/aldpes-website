@@ -2,14 +2,14 @@ div {
     text-align: center;
 }
 
-::ng-deep .ui-widget {
-    background: #C28E0E !important;
-}
 
 ::ng-deep .ui-widget-content {
     border-color: black !important;
+    -webkit-box-shadow:1px 1px 1px black;
+    -moz-box-shadow:1px 1px 1px black;
+    box-shadow:1px 1px 1px black;
 }
 
-.background-color {
-    background-color: #C28E0E;
+::ng-deep .ui-card-body {
+    background: #C28E0E !important;
 }
