@@ -3,3 +3,7 @@ div {
     display: block;
     z-index: 1000;
 }
+
+:host >>> .ui-menubar-custom {
+    padding: 0em !important;
+}
