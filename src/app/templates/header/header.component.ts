@@ -11,6 +11,10 @@ export class HeaderComponent {
 
     items: MenuItem[];
 
+    /**
+     * https://angular.io/guide/router to figure out how to do this
+     */
+
     ngOnInit() {
         this.items = [
             {
@@ -20,7 +24,7 @@ export class HeaderComponent {
             {
                 label: 'About',
                 items: [
-                    {label: 'History', url: 'about.html'},
+                    {label: 'History', url: '/test' },
                     {label: 'Officers', url: 'officers.html'},
                     {label: 'Office Info', url: 'officeinfo.html'},
                     {label: 'FAQs', url: 'faqs.html'},
