@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 import { MenuItem } from 'primeng/components/common/menuitem';
 
@@ -9,26 +9,41 @@ import { MenuItem } from 'primeng/components/common/menuitem';
 })
 export class HeaderComponent {
 
-    items: MenuItem[];
+    @Output() selected = new EventEmitter<string>();
 
-    /**
-     * https://angular.io/guide/router to figure out how to do this
-     */
+    items: MenuItem[];
 
     ngOnInit() {
         this.items = [
             {
                 label: 'Home', 
-                url: 'index.html'
+                command: () => {
+                    this.selected.emit('home') 
+                }
             },
             {
                 label: 'About',
                 items: [
-                    {label: 'History', url: '/test' },
-                    {label: 'Officers', url: 'officers.html'},
-                    {label: 'Office Info', url: 'officeinfo.html'},
-                    {label: 'FAQs', url: 'faqs.html'},
-                    {label: 'Archive', url: 'archive.html'}
+                    {label: 'History', command: () => {
+                            this.selected.emit('history') 
+                        }
+                    },
+                    {label: 'Officers', command: () => {
+                            this.selected.emit('officers') 
+                        }
+                    },
+                    {label: 'Office Hours', command: () => {
+                            this.selected.emit('office hours') 
+                        }
+                    },
+                    {label: 'FAQs', command: () => {
+                            this.selected.emit('faqs') 
+                        }
+                    },
+                    {label: 'Archive', command: () => {
+                            this.selected.emit('archive') 
+                        }
+                    },
                 ]
             },
             {

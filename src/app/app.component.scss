@@ -11,6 +11,13 @@
     justify-content: center;
 }
 
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 ::ng-deep .ui-menubar {
     /* background: linear-gradient(to bottom, #f6f7f9 0%, #C28E0E 100%); */
     background: #C28E0E;
