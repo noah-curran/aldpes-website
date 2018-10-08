@@ -55,8 +55,9 @@ export class HeaderComponent {
                 ]
             },
             {
-                label: 'Gallery',
-                url: 'gallery.html'
+                label: 'Gallery', command: () => {
+                    this.selected.emit('gallery')
+                }
             },
             {
                 label: 'Scholarships',

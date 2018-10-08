@@ -2,5 +2,8 @@
     <p-header>
         <img src="Card" src="./../../../assets/aldpes photos/{{picture}}"/>
     </p-header>
-    {{major}}
+    <span *ngIf="major != ''">Major: {{major}}</span>
+    <br/>
+    <span *ngIf="minor != ''">Minor: {{minor}}</span>
+    <br *ngIf="minor == ''" />
 </p-card>

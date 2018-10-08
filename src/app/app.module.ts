@@ -9,6 +9,7 @@ import {PanelModule} from 'primeng/panel';
 import {CardModule} from 'primeng/card';
 import {ScrollPanelModule} from 'primeng/scrollpanel';
 import {GalleriaModule} from 'primeng/galleria';
+import {LightboxModule} from 'primeng/lightbox';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './templates/header/header.component';
@@ -30,7 +31,8 @@ import { AboutCardComponent } from './templates/about-card/about-card.component'
     PanelModule,
     CardModule,
     ScrollPanelModule,
-    GalleriaModule
+    GalleriaModule,
+    LightboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

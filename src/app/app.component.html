@@ -46,7 +46,7 @@
     </div>
     <div class="ui-g-12">
       <div class="ui-g-4">
-        <app-about-card name='Noah Curran' position='Webmaster' major='Computer Science' picture='noah.jpg'></app-about-card>
+        <app-about-card name='Noah Curran' position='Webmaster' major='Computer Science and Mathematics' picture='noah.jpg'></app-about-card>
       </div>
       <div class="ui-g-4">
         <app-about-card name='Adi Bhatt' position='Philanthropy Chair' major='Biology' minor="Management" picture='adi.jpg'></app-about-card>
@@ -129,7 +129,10 @@
 
   <!-- Archive -->
 
-  <!-- -->
+  <!-- Gallery -->
+  <div *ngIf="selected_tab === 'gallery'"  class="ui-g-12">
+    <p-lightbox [images]="images"></p-lightbox>
+  </div>
 
   <div class="ui-g-12">
     <app-footer>

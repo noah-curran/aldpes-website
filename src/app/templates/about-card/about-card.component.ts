@@ -7,12 +7,13 @@ import { Component, Input } from '@angular/core';
 })
 export class AboutCardComponent {
 
-  @Input() name: string;
+  @Input() name: string = '';
 
-  @Input() position: string;
+  @Input() position: string = '';
 
-  @Input() picture: string;
+  @Input() picture: string = '';
 
-  @Input() major: string;
+  @Input() major: string = '';
 
+  @Input() minor: string = '';
 }
