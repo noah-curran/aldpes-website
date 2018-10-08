@@ -13,12 +13,14 @@ import {GalleriaModule} from 'primeng/galleria';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './templates/header/header.component';
 import { FooterComponent } from './templates/footer/footer.component';
+import { AboutCardComponent } from './templates/about-card/about-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    AboutCardComponent
   ],
   imports: [
     BrowserModule,
