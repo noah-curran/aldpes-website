@@ -49,9 +49,15 @@ export class HeaderComponent {
             {
                 label: 'Events',
                 items: [
-                    {label: 'Meetings', url: 'minutes.html'},
-                    {label: 'Tutoring', url: 'tutoring.html'},
-                    {label: 'Current Activites', url: 'events.html'}
+                    {label: 'Meetings', command: () => {
+                        this.selected.emit('meetings') 
+                    }},
+                    {label: 'Tutoring', command: () => {
+                        this.selected.emit('tutoring') 
+                    }},
+                    {label: 'Current Activites', command: () => {
+                        this.selected.emit('events') 
+                    }}
                 ]
             },
             {
@@ -61,11 +67,15 @@ export class HeaderComponent {
             },
             {
                 label: 'Scholarships',
-                url: 'scholarships.html'
+                command: () => {
+                    this.selected.emit('scholarships') 
+                }
             },
             {
                 label: 'Links',
-                url: 'links.html'
+                command: () => {
+                    this.selected.emit('links') 
+                }
             }
         ];
     }

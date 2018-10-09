@@ -8,8 +8,8 @@
   
   </div>
   
- <!-- Home Tab -->
-  <div *ngIf="selected_tab === 'home'" class="ui-g-12">
+  <!-- Home -->
+  <div [hidden]="selected_tab !== 'home'" class="ui-g-12">
 
     <div class="ui-g-9" style="height: 100%;">
       <p-galleria panelWidth="100%" 
@@ -31,8 +31,6 @@
   
   <!-- Officers -->
   <div *ngIf="selected_tab === 'officers'" class="ui-g-12">
-    <div class="ui-g-12">
-    </div>
     <div class="ui-g-12">
       <div class="ui-g-4">
         <app-about-card name='Leigha Hermann' position='President' major='Psychology' picture='Leigha.jpg'></app-about-card>
@@ -104,9 +102,6 @@
   <!-- Office Info -->
   <div *ngIf="selected_tab === 'office hours'"  class="ui-g-12">
     <div class="ui-g-12">
-    </div>
-
-    <div class="ui-g-12">
       <p-card ngClass="background-color">
         <div class="ui-g">
           <div class="ui-g-12">
@@ -125,13 +120,34 @@
     </div>
      
   </div>
+  
   <!-- FAQs -->
+  <div *ngIf="selected_tab === 'faqs'" class="ui-g-12">
+
+  </div>
 
   <!-- Archive -->
+  <div *ngIf="selected_tab === 'archive'" class="ui-g-12">
+
+  </div>
+
+  <!-- Meetings -->
+
+  <!-- Other events -->
 
   <!-- Gallery -->
   <div *ngIf="selected_tab === 'gallery'"  class="ui-g-12">
     <p-lightbox [images]="images"></p-lightbox>
+  </div>
+
+  <!-- Scholarships -->
+  <div *ngIf="selected_tab === 'scholarships'" class="ui-g-12">
+
+  </div>
+
+  <!-- Links -->
+  <div *ngIf="selected_tab === 'links'" class="ui-g-12">
+
   </div>
 
   <div class="ui-g-12">
