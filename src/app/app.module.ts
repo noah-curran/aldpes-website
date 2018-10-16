@@ -15,13 +15,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './templates/header/header.component';
 import { FooterComponent } from './templates/footer/footer.component';
 import { AboutCardComponent } from './templates/about-card/about-card.component';
+import { ScholarshipCardComponent } from './templates/scholarship-card/scholarship-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    AboutCardComponent
+    AboutCardComponent,
+    ScholarshipCardComponent
   ],
   imports: [
     BrowserModule,
