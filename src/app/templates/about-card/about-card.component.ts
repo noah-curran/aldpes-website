@@ -15,5 +15,7 @@ export class AboutCardComponent {
 
   @Input() major: string = '';
 
-  @Input() minor: string = '';
+  @Input() email: string = '';
+
+  @Input() hometown: string = ''; 
 }

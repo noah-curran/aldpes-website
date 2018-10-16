@@ -2,8 +2,11 @@
     <p-header>
         <img src="Card" src="./../../../assets/aldpes photos/{{picture}}"/>
     </p-header>
+    <span>Email: {{email}}@purdue.edu</span>
+    <br>
     <span *ngIf="major != ''">Major: {{major}}</span>
-    <br/>
-    <span *ngIf="minor != ''">Minor: {{minor}}</span>
-    <br *ngIf="minor == ''" />
+    <br *ngIf="major != ''" />
+    <span>Hometown: {{hometown}}</span>
+    <br>
+    <br *ngIf="major == ''">
 </p-card>
