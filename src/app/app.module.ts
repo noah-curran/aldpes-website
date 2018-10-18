@@ -10,12 +10,18 @@ import {CardModule} from 'primeng/card';
 import {ScrollPanelModule} from 'primeng/scrollpanel';
 import {GalleriaModule} from 'primeng/galleria';
 import {LightboxModule} from 'primeng/lightbox';
+import {TabMenuModule} from 'primeng/tabmenu';
+import {DropdownModule} from 'primeng/dropdown';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './templates/header/header.component';
 import { FooterComponent } from './templates/footer/footer.component';
 import { AboutCardComponent } from './templates/about-card/about-card.component';
 import { ScholarshipCardComponent } from './templates/scholarship-card/scholarship-card.component';
+import { MeetingsComponent } from './templates/meetings/meetings.component';
+
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +29,8 @@ import { ScholarshipCardComponent } from './templates/scholarship-card/scholarsh
     HeaderComponent,
     FooterComponent,
     AboutCardComponent,
-    ScholarshipCardComponent
+    ScholarshipCardComponent,
+    MeetingsComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +41,10 @@ import { ScholarshipCardComponent } from './templates/scholarship-card/scholarsh
     CardModule,
     ScrollPanelModule,
     GalleriaModule,
-    LightboxModule
+    LightboxModule,
+    TabMenuModule,
+    DropdownModule,
+    FormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -13,7 +13,7 @@ export class AboutCardComponent {
 
   @Input() picture: string = '';
 
-  @Input() major: string = '';
+  @Input() majors: string[];
 
   @Input() email: string = '';
 

@@ -1,0 +1,49 @@
+<div class="ui-g-12 ui-fluid">
+    <p-card>
+        <div class="ui-g">
+            <div class="ui-g-12">
+                <p-dropdown [options]="meetings" [(ngModel)]="meeting"></p-dropdown>
+            </div>
+            
+            <div class="ui-g-12" *ngIf="this.meeting === 'meeting2'">
+                <object height="950" data="../assets/meetings/meeting-2.pdf " type="application/pdf" width="100%">
+                    <p>
+                        You don't have a PDF plugin for this browser to see this file. 
+                    </p>
+                </object>
+            </div>
+
+            <div class="ui-g-12" *ngIf="this.meeting === 'meeting3'">
+                <object height="950" data="../assets/meetings/meeting-3.pdf " type="application/pdf" width="100%">
+                    <p>
+                        You don't have a PDF plugin for this browser to see this file. 
+                    </p>
+                </object>
+            </div>
+
+            <div class="ui-g-12" *ngIf="this.meeting === 'meeting4'">
+                <object height="950" data="../assets/meetings/meeting-4.pdf " type="application/pdf" width="100%">
+                    <p>
+                        You don't have a PDF plugin for this browser to see this file. 
+                    </p>
+                </object>
+            </div>
+
+            <div class="ui-g-12" *ngIf="this.meeting === 'meeting5'">
+                <object height="950" data="../assets/meetings/meeting-5.pdf " type="application/pdf" width="100%">
+                    <p>
+                        You don't have a PDF plugin for this browser to see this file. 
+                    </p>
+                </object>
+            </div>
+
+            <div class="ui-g-12" *ngIf="this.meeting === 'meeting7'">
+                <object height="950" data="../assets/meetings/meeting-7.pdf " type="application/pdf" width="100%">
+                    <p>
+                        You don't have a PDF plugin for this browser to see this file. 
+                    </p>
+                </object>
+            </div>
+        </div>
+    </p-card>
+</div>

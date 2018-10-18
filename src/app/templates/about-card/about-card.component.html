@@ -4,8 +4,11 @@
     </p-header>
     <span>Email: {{email}}@purdue.edu</span>
     <br>
-    <span *ngIf="major != ''">Major: {{major}}</span>
-    <br *ngIf="major != ''" />
+    <div *ngFor="let major of majors; let i=index">
+        <span *ngIf="i === 0">Major: {{major}}</span>
+        <span *ngIf="i !== 0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{major}}</span>
+        <br/>    
+    </div>
     <span>Hometown: {{hometown}}</span>
     <br>
     <br *ngIf="major == ''">

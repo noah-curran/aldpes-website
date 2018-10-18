@@ -51,68 +51,68 @@
   <div *ngIf="selected_tab === 'officers'" class="ui-g-12">
     <div class="ui-g-12">
       <div class="ui-g-4">
-        <app-about-card name='Leigha Hermann' email='hermann0' position='President' major='Psychology' picture='Leigha.jpg'></app-about-card>
+        <app-about-card name='Leigha Hermann' email='hermann0' hometown='Stockbridge, Wisconsin' position='President' [majors]="['Psychological Sciences', 'Law and Society']" picture='Leigha.jpg'></app-about-card>
       </div>
       <div class="ui-g-4">
         <app-about-card name='Susan Huffman' email='smhuffman' hometown='Anderson, Indiana' position='Advisor' picture='huffman.jpg'></app-about-card>
       </div>
       <div class="ui-g-4">
-        <app-about-card name='Blake Hinch' position='Vice President' major='Agribusiness Management' picture='blake.jpg'></app-about-card>
+        <app-about-card name='Blake Hinch' email='bhinch' hometown='Lake Forest, Illinois' position='Vice President' [majors]="['Agribusiness Management']" picture='blake.jpg'></app-about-card>
       </div>
     </div>
     <div class="ui-g-12">
       <div class="ui-g-4">
-        <app-about-card name='Noah Curran' email='currann' hometown='Sylvania, Ohio' position='Webmaster' major='Computer Science and Mathematics' picture='noah.jpg'></app-about-card>
+        <app-about-card name='Noah Curran' email='currann' hometown='Sylvania, Ohio' position='Webmaster' [majors]="['Computer Science', 'Mathematics']" picture='noah.jpg'></app-about-card>
       </div>
       <div class="ui-g-4">
-        <app-about-card name='Adi Bhatt' position='Philanthropy Chair' major='Biology' minor="Management" picture='adi.jpg'></app-about-card>
+        <app-about-card name='Adi Bhatt' hometown='Fishers, Indiana' position='Philanthropy Chair' [majors]="['Biology']" picture='adi.jpg'></app-about-card>
       </div>
       <div class="ui-g-4">
-        <app-about-card name='Ally Ashenbaugh' position='Programs Coordinator' major='Nursing' picture='ally.jpg'></app-about-card>
+        <app-about-card name='Ally Ashenbaugh' position='Programs Coordinator' hometown='Munster, Indiana' [majors]="['Nursing']" picture='ally.jpg'></app-about-card>
       </div>
     </div>
     <div class="ui-g-12">
       <div class="ui-g-4">
-        <app-about-card name='Dana Johnson' position='Print Media Chair' major='Interior Design' picture='dana.jpg'></app-about-card>
+        <app-about-card name='Dana Johnson' position='Print Media Chair' hometown='Zionsville, Indiana' [majors]="['Art Education']" picture='dana.jpg'></app-about-card>
       </div>
       <div class="ui-g-4">
-        <app-about-card name='Devyn Raver' position='Social Media Chair' major='Public Relations' picture='devyn.jpg'></app-about-card>
+        <app-about-card name='Devyn Raver' email='draver' position='Social Media Chair' [majors]="['Public Relations']" picture='devyn.jpg'></app-about-card>
       </div>
       <div class="ui-g-4">
-        <app-about-card name='Emily Anderson' position='Secretary' major='Astronautical Engineering' picture='emily.jpg'></app-about-card>
+        <app-about-card name='Emily Anderson' position='Secretary' [majors]="['Astronautical Engineering']" picture='emily.jpg'></app-about-card>
       </div>
     </div>
     <div class="ui-g-12">
         <div class="ui-g-4">
-          <app-about-card name='Eve Loewe' position='Treasurer' major='Biomedical Engineering' picture='eve.jpg'></app-about-card>
+          <app-about-card name='Eve Loewe' email='eloewe' position='Treasurer' hometown='Dallas, Texas' [majors]="['Biomedical Engineering']" picture='eve.jpg'></app-about-card>
         </div>
         <div class="ui-g-4">
-          <app-about-card name='Jamie Davis' position='Philanthropy Chair' major='Mechanical Engineering' picture='jamie.jpg'></app-about-card>
+          <app-about-card name='Jamie Davis' hometown='Ramsey, New Jersey' position='Philanthropy Chair' [majors]="['Mechanical Engineering']" picture='jamie.jpg'></app-about-card>
         </div>
         <div class="ui-g-4">
-          <app-about-card name='Jenni Romanchek' position='Historian' major='Hospitality and Tourism Management' picture='jen.jpg'></app-about-card>
-        </div>
-    </div>
-    <div class="ui-g-12">
-        <div class="ui-g-4">
-          <app-about-card name='Justan Zommars' position='Publicity Chair' major='Industrial Engineering' picture='justan.jpg'></app-about-card>
-        </div>
-        <div class="ui-g-4">
-          <app-about-card name='Kathryn Snyder' position='Social Media Chair' major='Wildlife' picture='kathryn.jpg'></app-about-card>
-        </div>
-        <div class="ui-g-4">
-          <app-about-card name='Kendall Landorf' position='Spirit Chair' major='' picture='Kendall.jpg'></app-about-card>
+          <app-about-card name='Jennifer Romanchek' position='Historian' hometown='Lake Forest, Illinois' [majors]="['Hospitality and Tourism Management']" picture='jen.jpg'></app-about-card>
         </div>
     </div>
     <div class="ui-g-12">
         <div class="ui-g-4">
-          <app-about-card name='Meg Kinslow' position='Historian' major='' picture='meg.jpg'></app-about-card>
+          <app-about-card name='Justan Zommars' position='Publicity Chair' [majors]="['Industrial Engineering']" picture='justan.jpg'></app-about-card>
         </div>
         <div class="ui-g-4">
-          <app-about-card name='Renee Wayner' position='Philanthropy Chair' major='Pre-Pharmacy' picture='renee.jpg'></app-about-card>
+          <app-about-card name='Kathryn Snyder' position='Social Media Chair' [majors]="['Wildlife']" picture='kathryn.jpg'></app-about-card>
         </div>
         <div class="ui-g-4">
-          <app-about-card name='Ross Klink' position='Social Coordinator' major='Economics' picture='ross.jpg'></app-about-card>
+          <app-about-card name='Kendall Landorf' position='Spirit Chair' [majors]="['']" picture='Kendall.jpg'></app-about-card>
+        </div>
+    </div>
+    <div class="ui-g-12">
+        <div class="ui-g-4">
+          <app-about-card name='Meg Kinslow' hometown='Thorntown, Indiana' position='Historian' [majors]="['Selling and Sales Management']" picture='meg.jpg'></app-about-card>
+        </div>
+        <div class="ui-g-4">
+          <app-about-card name='Renee Wayner' position='Philanthropy Chair' [majors]="['Pre-Pharmacy']" picture='renee.jpg'></app-about-card>
+        </div>
+        <div class="ui-g-4">
+          <app-about-card name='Ross Klink' hometown='Lafayette, Indiana' position='Social Coordinator' [majors]="['Economics']" picture='ross.jpg'></app-about-card>
         </div>
     </div>
   </div>
@@ -342,7 +342,11 @@
   </div>
 
   <!-- Meetings -->
-
+  <div *ngIf="selected_tab === 'meetings'" class="ui-g-12">
+    
+      <app-meetings></app-meetings>
+    
+  </div>
   <!-- Other events -->
 
   <!-- Gallery -->
