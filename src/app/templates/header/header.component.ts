@@ -22,42 +22,48 @@ export class HeaderComponent {
                 }
             },
             {
-                label: 'About',
+                label: 'Leadership',
                 items: [
-                    {label: 'History', command: () => {
-                            this.selected.emit('history') 
-                        }
-                    },
-                    {label: 'Officers', command: () => {
+                    {
+                        label: 'Officers', command: () => {
                             this.selected.emit('officers') 
                         }
                     },
-                    {label: 'Office Hours', command: () => {
+                    {
+                        label: 'Office Hours', command: () => {
                             this.selected.emit('office hours') 
                         }
                     },
-                    {label: 'FAQs', command: () => {
-                            this.selected.emit('faqs') 
+                    {
+                        label: 'Meetings', command: () => {
+                            this.selected.emit('meetings') 
                         }
-                    },
-                    {label: 'Archive', command: () => {
-                            this.selected.emit('archive') 
-                        }
-                    },
+                    }
                 ]
             },
             {
-                label: 'Events',
+                label: 'About',
                 items: [
-                    {label: 'Meetings', command: () => {
-                        this.selected.emit('meetings') 
-                    }},
-                    {label: 'Tutoring', command: () => {
-                        this.selected.emit('tutoring') 
-                    }},
-                    {label: 'Current Activites', command: () => {
-                        this.selected.emit('events') 
-                    }}
+                    {
+                        label: 'History', command: () => {
+                            this.selected.emit('history') 
+                        }
+                    },
+                    {
+                        label: 'FAQs', command: () => {
+                            this.selected.emit('faqs') 
+                        }
+                    },
+                    {
+                        label: 'Archive', command: () => {
+                            this.selected.emit('archive') 
+                        }
+                    },
+                    {
+                        label: 'Links', command: () => {
+                            this.selected.emit('links') 
+                        }
+                    }
                 ]
             },
             {
@@ -69,12 +75,6 @@ export class HeaderComponent {
                 label: 'Scholarships',
                 command: () => {
                     this.selected.emit('scholarships') 
-                }
-            },
-            {
-                label: 'Links',
-                command: () => {
-                    this.selected.emit('links') 
                 }
             }
         ];
