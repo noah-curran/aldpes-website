@@ -1,6 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+
+/** Main Component */
+import { AppComponent } from './app.component';
 
 /** PrimeNG Modules */
 import {ButtonModule} from 'primeng/button';
@@ -13,24 +17,32 @@ import {LightboxModule} from 'primeng/lightbox';
 import {TabMenuModule} from 'primeng/tabmenu';
 import {DropdownModule} from 'primeng/dropdown';
 
-import { AppComponent } from './app.component';
+/** Templates */
 import { HeaderComponent } from './templates/header/header.component';
 import { FooterComponent } from './templates/footer/footer.component';
 import { AboutCardComponent } from './templates/about-card/about-card.component';
 import { ScholarshipCardComponent } from './templates/scholarship-card/scholarship-card.component';
-import { MeetingsComponent } from './templates/meetings/meetings.component';
 
-import { FormsModule } from '@angular/forms';
-
+/** Pages */
+import { OfficersComponent } from './pages/officers/officers.component';
+import { OfficeHoursComponent } from './pages/office-hours/office-hours.component';
+import { HistoryComponent } from './pages/history/history.component';
+import { MeetingsComponent } from './pages/meetings/meetings.component';
 
 @NgModule({
   declarations: [
+    /** Templates */
     AppComponent,
     HeaderComponent,
     FooterComponent,
     AboutCardComponent,
     ScholarshipCardComponent,
-    MeetingsComponent
+    
+    /** Pages */
+    OfficersComponent,
+    OfficeHoursComponent,
+    HistoryComponent,
+    MeetingsComponent,
   ],
   imports: [
     BrowserModule,
