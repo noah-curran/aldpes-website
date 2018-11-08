@@ -12,12 +12,10 @@
   <div [hidden]="selected_tab !== 'home'" class="ui-g-12">
 
     <div class="ui-g-9" style="height: 100%;">
-      <p-galleria panelWidth="100%" 
-      panelHeight="515" 
-      [images]="images"
-      [showFilmstrip]="true"
-      [showCaption]="true"
-      effectDuration=100></p-galleria>
+      <ngx-image-gallery 
+        [images]="images" 
+        [conf]="conf"
+      ></ngx-image-gallery>
     </div>
     <div class="ui-g-3" style="height: 100%;">
       <a class="twitter-timeline" href="https://twitter.com/LifeAtPurdue?ref_src=twsrc%5Etfw" data-height="100%" data-chrome="nofooter noborders">Tweets by Life@Purdue</a> 
@@ -46,199 +44,7 @@
 
   <!-- FAQs -->
   <div *ngIf="selected_tab === 'faqs'" class="ui-g-12" id="top">
-    <div class="ui-g-12">
-      <p-card ngClass="background-color">
-        <div class="ui-g">
-          <div class="ui-g-12">
-            <a href="#one">1. Why is the name of the organization so long?</a>
-          </div>
-          <div class="ui-g-12">
-            <a href="#two">2. Is this a legitimate national honor society? There are so many national honor societies to choose from.</a>
-          </div>
-          <div class="ui-g-12">
-            <a href="#three">3. What are the membership requirements?</a>
-          </div>
-          <div class="ui-g-12">
-            <a href="#four">4. I transferred to Purdue from a college that did not have an Alpha Lambda Delta Phi Eta Sigma Chapter.  Am I eligible for membership?</a>
-          </div>
-          <div class="ui-g-12">
-            <a href="#five">5. What if my GPA drops below a 3.50 after I become a member of Alpha Lambda Delta Phi Eta Sigma?</a>
-          </div>
-          <div class="ui-g-12">
-            <a href="#six">6. How much do I need to pay in membership dues?</a>
-          </div>
-          <div class="ui-g-12">
-            <a href="#seven">7. If I join Alpha Lambda Delta Phi Eta Sigma as a lifetime member, will I be ineligible to join other national honor societies? </a>
-          </div>
-          <div class="ui-g-12">
-            <a href="#eight">  8. Is there a pledge week similar to the initiation into the Greek system?</a>
-          </div>
-          <div class="ui-g-12">
-            <a href="#nine">  9. As a member of Alpha Lambda Delta Phi Eta Sigma am I required to participate in service projects and chapter events?</a>
-          </div>
-          <div class="ui-g-12">
-            <a href="#ten">  10. After I become a member, how do I get involved?</a>
-          </div>
-          <div class="ui-g-12">
-            <a href="#eleven">  11. Are there any leadership opportunities?</a>
-          </div>
-          <div class="ui-g-12">
-            <a href="#twelve">  12. What should I wear for initiation?</a>
-          </div>
-        </div>
-      </p-card>
-    </div>
-    <div class="ui-g-12" id="one">
-      <p-card>
-      <h3>
-        Why is the name of the organization so long?
-      </h3>
-      <p>
-        Phi Eta Sigma was founded as a freshman honor society designed to promote academic achievement among male students.  Alpha Lambda Delta was originally founded as an honor society strictly for girls at the University of Illinois in 1924.  A chapter was founded at Purdue University in 1926.  In 1979, Alpha Lambda Delta became a co-ed national honor society.  Each of these societies operates separately at the national level.  However, both Alpha Lambda Delta and Phi Eta Sigma operate as one entity on the Purdue University campus, as well as many other campuses across the nation.
-      </p>
-      <a href="#top">Return to top</a>
-    </p-card>
-    </div>
-
-    <div class="ui-g-12" id="two">
-        <p-card>
-        <h3>
-          Is this a legitimate national honor society?  There are so many national honor societies to choose from.
-        </h3>
-        <p>
-            We can assure you that Alpha Lambda Delta Phi Eta Sigma is legitimate.  It has over seventy-five years of rich history at hundreds of universities across the country.  Only the brightest students are offered membership each year.  In addition, the Alpha Lambda Delta and Phi Eta Sigma National Honor Societies are both long-standing members of the Association of College Honor Societies.
-        </p>
-        <a href="#top">Return to top</a>
-      </p-card>
-    </div>
-  
-    <div class="ui-g-12" id="three">
-        <p-card>
-        <h3>
-          What are the membership requirements?
-        </h3>
-        <p>
-          First of all, you must be a first-year student at the university.  Secondly, you need to earn a 3.50 GPA during your first or second semester in attendance.
-        </p>
-        <a href="#top">Return to top</a>
-      </p-card>
-    </div>
-
-    <div class="ui-g-12" id="four">
-        <p-card>
-        <h3>
-          I transferred to Purdue from a college that did not have an Alpha Lambda Delta Phi Eta Sigma Chapter.  Am I eligible for membership?
-        </h3>
-        <p>
-          Freshman transfer students from institutions that do not have an Alpha Lambda Delta Phi Eta Sigma chapter, to be eligible for membership, must have the required Alpha Lambda Delta Phi Eta Sigma grade point average on the courses taken during the first full circular period in the institution to which they transfer.  In addition, the cumulative average of the grades of the student's transfer credits combined with the grades in the institution in which the student is currently enrolled must equal the Alpha Lambda Delta Phi Eta Sigma academic grade requirement
-        </p>
-        <a href="#top">Return to top</a>
-      </p-card>
-    </div>
-  
-    <div class="ui-g-12" id="five">
-        <p-card>
-        <h3>
-          What if my GPA drops below a 3.50 after I become a  member of Alpha Lambda Delta Phi Eta Sigma?
-        </h3>
-        <p>
-          While we do encourage members to maintain academic excellence throughout their time at Purdue, students are not required to maintain their GPA after they have been initiated.  After you have been inducted into Alpha Lambda Delta Phi Eta Sigma you are a lifetime member.
-        </p>
-        <a href="#top">Return to top</a>
-      </p-card>
-    </div>
-
-    <div class="ui-g-12" id="six">
-      <p-card>
-        <h3>
-          How much do I need to pay in membership dues?
-        </h3>
-        <p>Membership dues are $80.00.  This payment qualifies you as a member of both the Alpha Lambda Delta and Phi Eta Sigma National Honor Societies and as a member of the Purdue chapter of Alpha Lambda Delta Phi Eta Sigma.</p>
-        
-        <p>Breakdown:</p>
-  
-        <p>Alpha Lambda Delta national dues are $25</p>
-        <p>Phi Eta Sigma dues are $20</p>
-        <p>Local dues are $35</p>
-  
-        <p>Total: $80</p>
-  
-        <p>This one time payment qualifies you as a lifetime member of both honor societies.</p>
-        <a href="#top">Return to top</a>
-      </p-card>
-    </div>
-
-    <div class="ui-g-12" id="seven">
-        <p-card>
-        <h3>
-          If I join Alpha Lambda Delta Phi Eta Sigma as a lifetime member, will I be ineligible to join other national honor societies?  
-        </h3>
-        <p>
-          No, you are certainly free to join other honor societies.  You are allowed to be a member of Alpha Lambda Delta Phi Eta Sigma and a member of other honor societies. 
-        </p>
-        <a href="#top">Return to top</a>
-      </p-card>
-    </div>
-
-    <div class="ui-g-12" id="eight">
-        <p-card>
-        <h3>
-          Is there a pledge week similar to the initiation  into the Greek system?
-        </h3>
-        <p>
-          No, there is not a pledge week or initiation requirement.  As long as you meet the two membership requirements, you are virtually a member.  There is an initiation ceremony for you and your parents.  There is an optional banquet that follows the initiation ceremony, as well. 
-        </p>
-        <a href="#top">Return to top</a>
-      </p-card>
-    </div>
-
-    <div class="ui-g-12" id="nine">
-        <p-card>
-        <h3>
-          As a member of Alpha Lambda Delta Phi  Eta Sigma am I required to participate in service projects and chapter events?
-        </h3>
-        <p>
-          We do encourage our members to become involved in the various service projects and activities of the chapter, but we do not require attendance.  You will be regularly informed of scheduled events for members.  We truly hope you will take advantage of these exciting opportunities. 
-        </p>
-        <a href="#top">Return to top</a>
-      </p-card>
-    </div>
-
-    <div class="ui-g-12" id="ten">
-        <p-card>
-        <h3>
-          After I become a member, how do I get involved?
-        </h3>
-        <p>
-          We will inform you of any events or important news through email, our newsletter, and this website.  Please feel free to contact our officers via email with any questions you may have.  We will certainly be glad to help you in any way we can.  We are very excited to talk with members who wish to actively participate in the local chapter of Alpha Lambda Delta Phi Eta Sigma. 
-        </p>
-        <a href="#top">Return to top</a>
-      </p-card>
-    </div>
-
-    <div class="ui-g-12" id="eleven">
-        <p-card>
-        <h3>
-          Are there any leadership opportunities?
-        </h3>
-        <p>
-          Yes, there are many leadership positions within the executive council of the Purdue Chapter.  This body is made up entirely of sophomore representatives.  A new council is selected each spring, usually in April.  Details regarding the selection and interview process will be made available as April draws nearer.
-        </p>
-        <a href="#top">Return to top</a>
-      </p-card>
-    </div>
-
-    <div class="ui-g-12" id="twelve">
-        <p-card>
-        <h3>
-          What should I wear for initiation?
-        </h3>
-        <p>
-          The dress code for initiation is the standard "business professional" shirts and ties for men, and the equivalent for women.  Most people will be wearing suits, skirts, and dresses. 
-        </p>
-        <a href="#top">Return to top</a>
-      </p-card>
-    </div>
+    <app-faqs></app-faqs>
   </div>
 
   <!-- Archive -->
@@ -250,7 +56,8 @@
 
   <!-- Gallery -->
   <div *ngIf="selected_tab === 'gallery'"  class="ui-g-12">
-    <p-lightbox [images]="images"></p-lightbox>
+    <!-- <p-lightbox [images]="images"></p-lightbox> -->
+    <app-gallery></app-gallery>
   </div>
 
   <!-- Scholarships -->

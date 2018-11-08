@@ -1,15 +1,14 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { NgxImageGalleryComponent, GALLERY_CONF, GALLERY_IMAGE } from './changed-source/ngx-image-gallery';
+import { Component, ViewChild } from "@angular/core";
+
+import { NgxImageGalleryComponent, GALLERY_IMAGE, GALLERY_CONF } from "../../changed-source/ngx-image-gallery";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-gallery',
+  templateUrl: './gallery.component.html',
+  styleUrls: ['./gallery.component.css']
 })
-export class AppComponent {
+export class GalleryComponent {
 
-  selected_tab: string;
-    
   // get reference to gallery component
   @ViewChild(NgxImageGalleryComponent) ngxImageGallery: NgxImageGalleryComponent;
   
@@ -34,12 +33,4 @@ export class AppComponent {
       altText: "fds"
     },
   ];
-
-  constructor() {
-    this.selected_tab = 'home'
-  }
-
-  onSelected(new_tab: string): void {
-    this.selected_tab = new_tab;
-  }
 }

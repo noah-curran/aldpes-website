@@ -28,6 +28,16 @@ import { OfficersComponent } from './pages/officers/officers.component';
 import { OfficeHoursComponent } from './pages/office-hours/office-hours.component';
 import { HistoryComponent } from './pages/history/history.component';
 import { MeetingsComponent } from './pages/meetings/meetings.component';
+import { FaqsComponent } from './pages/faqs/faqs.component';
+import { GalleryComponent } from './pages/gallery/gallery.component';
+
+/** Hammerjs */
+import 'hammerjs';
+import { enableProdMode } from '@angular/core';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+
+/** NGX Image Gallery */
+import { NgxImageGalleryModule } from './changed-source/ngx-image-gallery/';
 
 @NgModule({
   declarations: [
@@ -43,6 +53,8 @@ import { MeetingsComponent } from './pages/meetings/meetings.component';
     OfficeHoursComponent,
     HistoryComponent,
     MeetingsComponent,
+    FaqsComponent,
+    GalleryComponent,
   ],
   imports: [
     BrowserModule,
@@ -56,7 +68,8 @@ import { MeetingsComponent } from './pages/meetings/meetings.component';
     LightboxModule,
     TabMenuModule,
     DropdownModule,
-    FormsModule 
+    FormsModule,
+    NgxImageGalleryModule
   ],
   providers: [],
   bootstrap: [AppComponent]
