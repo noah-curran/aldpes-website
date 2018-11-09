@@ -31,6 +31,7 @@ import { MeetingsComponent } from './pages/meetings/meetings.component';
 import { FaqsComponent } from './pages/faqs/faqs.component';
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { ScholarshipsComponent } from './pages/scholarships/scholarships.component';
+import { LinksComponent } from './pages/links/links.component';
 
 /** Hammerjs */
 import 'hammerjs';
@@ -57,6 +58,7 @@ import { NgxImageGalleryModule } from './changed-source/ngx-image-gallery/src/in
     FaqsComponent,
     GalleryComponent,
     ScholarshipsComponent,
+    LinksComponent,
   ],
   imports: [
     BrowserModule,

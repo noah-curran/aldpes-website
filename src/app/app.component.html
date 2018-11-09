@@ -56,7 +56,6 @@
 
   <!-- Gallery -->
   <div *ngIf="selected_tab === 'gallery'"  class="ui-g-12">
-    <!-- <p-lightbox [images]="images"></p-lightbox> -->
     <app-gallery></app-gallery>
   </div>
 
@@ -67,11 +66,10 @@
 
   <!-- Links -->
   <div *ngIf="selected_tab === 'links'" class="ui-g-12">
-
+    <app-links></app-links>
   </div>
 
   <div class="ui-g-12">
-    <app-footer>
-    </app-footer>
+    <app-footer></app-footer>
   </div>
 </div>
