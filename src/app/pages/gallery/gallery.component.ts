@@ -1,6 +1,6 @@
 import { Component, ViewChild } from "@angular/core";
 
-import { NgxImageGalleryComponent, GALLERY_IMAGE, GALLERY_CONF } from "../../changed-source/ngx-image-gallery";
+import { NgxImageGalleryComponent, GALLERY_IMAGE, GALLERY_CONF } from "../../changed-source/ngx-image-gallery/src/index";
 
 @Component({
   selector: 'app-gallery',

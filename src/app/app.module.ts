@@ -37,7 +37,7 @@ import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 /** NGX Image Gallery */
-import { NgxImageGalleryModule } from './changed-source/ngx-image-gallery/';
+import { NgxImageGalleryModule } from './changed-source/ngx-image-gallery/src/index';
 
 @NgModule({
   declarations: [

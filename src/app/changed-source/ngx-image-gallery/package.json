@@ -1,56 +1,89 @@
 {
-  "_from": "ngx-image-gallery",
-  "_id": "ngx-image-gallery@1.3.1",
-  "_inBundle": false,
-  "_integrity": "sha512-MhEKjxxFuxkqInONFFBTttoFZTbW5vylWnHMve8z4gf4OPUN5FPmFg1c7GmE1lQWIaWwKBuSOMG7mY6040F2jw==",
-  "_location": "/ngx-image-gallery",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "ngx-image-gallery",
-    "name": "ngx-image-gallery",
-    "escapedName": "ngx-image-gallery",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/ngx-image-gallery/-/ngx-image-gallery-1.3.1.tgz",
-  "_shasum": "5778e366282f982b43bbc48050a699953db80d23",
-  "_spec": "ngx-image-gallery",
-  "_where": "C:\\Users\\swimn\\Desktop\\aldpes\\aldpesv2\\aldpes\\aldpes-website",
-  "author": {
-    "name": "Anthony Nahas",
-    "email": "anthony.na@hotmail.de"
-  },
-  "bugs": {
-    "url": "git+https://github.com/thatisuday/ngx-image-gallery.git/issues"
-  },
-  "bundleDependencies": false,
-  "deprecated": false,
-  "description": "Probably the best Angular 4+ modal and inline image gallery. Angular upgrade for ng-image-gallery.",
-  "homepage": "https://github.com/thatisuday/ngx-image-gallery#readme",
-  "jsnext:main": "ngx-image-gallery.js",
-  "keywords": [
-    "angular"
-  ],
-  "license": "MIT",
-  "main": "ngx-image-gallery.umd.js",
-  "module": "ngx-image-gallery.js",
   "name": "ngx-image-gallery",
-  "peerDependencies": {
-    "@angular/core": "^4.0.0",
-    "rxjs": "^5.1.0",
-    "zone.js": "^0.8.4"
+  "version": "1.4.1",
+  "description": "Probably the best Angular 4+ modal & inline image gallery. Angular upgrade for ng-image-gallery.",
+  "scripts": {
+    "build": "gulp build",
+    "build:watch": "gulp",
+    "docs": "npm run docs:build",
+    "docs:build": "compodoc -p tsconfig.json -n ngx-image-gallery -d docs --hideGenerator",
+    "docs:serve": "npm run docs:build -- -s",
+    "docs:watch": "npm run docs:build -- -s -w",
+    "lint": "tslint --type-check --project tsconfig.json src/**/*.ts",
+    "lite": "lite-server",
+    "playground:build": "tsc -p playground -w",
+    "playground": "concurrently \"npm run build:watch\" \"npm run playground:build\" \"npm run lite\"",
+    "install:demo": "cd demo-app && npm install",
+    "serve": "cd demo-app && ng serve --open",
+    "demo": "npm run install:demo && npm run serve",
+    "test": "tsc && karma start"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/thatisuday/ngx-image-gallery.git"
   },
-  "typings": "ngx-image-gallery.d.ts",
-  "version": "1.3.1"
+  "author": {
+    "name": "Uday Hiwarale",
+    "email": "thatisuday@gmail.com"
+  },
+  "keywords": [
+    "image",
+    "gallery",
+    "angular"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "git+https://github.com/thatisuday/ngx-image-gallery.git/issues"
+  },
+  "devDependencies": {
+    "@angular/cli": "^1.5.2",
+    "@angular/common": "^4.0.0",
+    "@angular/compiler": "^4.0.0",
+    "@angular/compiler-cli": "^4.0.0",
+    "@angular/core": "^4.0.0",
+    "@angular/platform-browser": "^4.0.0",
+    "@angular/platform-browser-dynamic": "^4.0.0",
+    "@compodoc/compodoc": "^1.0.0-beta.10",
+    "@types/jasmine": "2.5.38",
+    "@types/node": "~6.0.60",
+    "codelyzer": "~2.0.0",
+    "concurrently": "^3.4.0",
+    "core-js": "^2.4.1",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-rollup": "^2.15.0",
+    "jasmine-core": "~2.5.2",
+    "jasmine-spec-reporter": "~3.2.0",
+    "karma": "~1.4.1",
+    "karma-chrome-launcher": "~2.0.0",
+    "karma-cli": "~1.0.1",
+    "karma-coverage-istanbul-reporter": "^0.2.0",
+    "karma-jasmine": "~1.1.0",
+    "karma-jasmine-html-reporter": "^0.2.2",
+    "lite-server": "^2.3.0",
+    "node-sass": "^4.5.2",
+    "node-sass-tilde-importer": "^1.0.0",
+    "node-watch": "^0.5.2",
+    "protractor": "~5.1.0",
+    "rollup": "^0.49.3",
+    "run-sequence": "^1.2.2",
+    "rxjs": "^5.5.2",
+    "systemjs": "^0.20.12",
+    "ts-node": "~2.0.0",
+    "tslint": "~4.5.0",
+    "typescript": "~2.2.0",
+    "zone.js": "^0.8.4"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "main": "dist/ngx-image-gallery.umd.js",
+  "module": "dist/ngx-image-gallery.js",
+  "jsnext:main": "dist/ngx-image-gallery.js",
+  "typings": "dist/ngx-image-gallery.d.ts",
+  "dependencies": {
+    "hammerjs": "^2.0.8",
+    "lodash": "^4.17.4"
+  }
 }
