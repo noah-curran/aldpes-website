@@ -24,6 +24,7 @@ export class MeetingsComponent {
             {label: 'Meeting 5', value: 'meeting5'},
             {label: 'Meeting 7', value: 'meeting7'},
             {label: 'Meeting 8', value: 'meeting8'},
+            {label: 'Meeting 9', value: 'meeting9'}
         ];
     }
 

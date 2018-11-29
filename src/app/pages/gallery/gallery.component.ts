@@ -23,14 +23,34 @@ export class GalleryComponent {
   // gallery images
   images: GALLERY_IMAGE[] = [
     {
-      url: "https://images.pexels.com/photos/669013/pexels-photo-669013.jpeg?w=1260", 
-      altText: 'woman-in-black-blazer-holding-blue-cup', 
-      title: 'woman-in-black-blazer-holding-blue-cup'
+      url: "../../assets/aldpes photos/display case.png",
+      title: "Our display case in Stewart.",
+      altText: ""
     },
     {
-      url: "../../assets/images/arch.jpg",
-      title: "test",
-      altText: "fds"
+      url: "../../assets/aldpes photos/volunteering.png",
+      title: "Volunteering for the Hunger Run!",
+      altText: ""
+    },
+    {
+      url: "../../assets/aldpes photos/volunteering2.png",
+      title: "Volunteering for the Hunger Run!",
+      altText: ""
+    },
+    {
+      url: "../../assets/aldpes photos/volunteering3.png",
+      title: "Volunteering for the Hunger Run!",
+      altText: ""
+    },
+    {
+      url: "../../assets/aldpes photos/hc_parade.png",
+      title: "Getting ready to march in the homecoming parade.",
+      altText: ""
+    },
+    {
+      url: "../../assets/aldpes photos/group_shot2.png",
+      title: "Our leadership board.",
+      altText: ""
     },
   ];
 }
