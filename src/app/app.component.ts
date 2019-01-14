@@ -24,14 +24,16 @@ export class AppComponent {
   // gallery images
   images: GALLERY_IMAGE[] = [
     {
-      url: "https://images.pexels.com/photos/669013/pexels-photo-669013.jpeg?w=1260", 
-      altText: 'woman-in-black-blazer-holding-blue-cup', 
-      title: 'woman-in-black-blazer-holding-blue-cup'
+      url: "http://static1.squarespace.com/static/55d20195e4b06f17b400345c/t/5b4cab7b2b6a28b683134367/1531751294660/ald+web+logo+banner+-+updated+2018.jpg?format=1500w", 
+      title: 'Alpha Lambda Delta'
+    },
+    {
+      url: "https://sites.google.com/site/phietasigmaiup/_/rsrc/1504928598581/home/phi_eta_sigma_header_logo.jpg",
+      title: 'Phi Eta Sigma'
     },
     {
       url: "../../assets/images/arch.jpg",
-      title: "test",
-      altText: "fds"
+      title: "Purdue University!"
     },
   ];
 
