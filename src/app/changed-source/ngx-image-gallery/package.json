@@ -36,7 +36,7 @@
     "url": "git+https://github.com/thatisuday/ngx-image-gallery.git/issues"
   },
   "devDependencies": {
-    "@angular/cli": "^1.5.2",
+    "@angular/cli": "^15.0.4",
     "@angular/common": "^4.0.0",
     "@angular/compiler": "^4.0.0",
     "@angular/compiler-cli": "^4.0.0",
